@@ -16,12 +16,12 @@ public class retoStepDefinitions {
     @Given("^A user wants to create an account on Utest\\.com$")
     public void aUserWantsToCreateAnAccountOnUtestCom() {
         OnStage.theActorCalled("usuario").wasAbleTo(OpenUp.thePage());
-        OnStage.theActorCalled("usuario").wasAbleTo(Join.credentials());
+
     }
 
     @When("^he click on the button Join today an fill the form$")
     public void heClickOnTheButtonJoinTodayAnFillTheForm() {
-
+        OnStage.theActorCalled("usuario").wasAbleTo(Join.credentials());
     }
 
     @Then("^Him user will be succesfully created$")
